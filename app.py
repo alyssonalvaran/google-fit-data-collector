@@ -63,10 +63,3 @@ if __name__ == "__main__":
     dataset = retrieve_data()
     with open('dataset.txt', 'w') as outfile:
         json.dump(dataset, outfile)
-
-    # last_point = dataset["point"][-1]
-    # print("Start time:", nanoseconds(int(last_point.get("startTimeNanos", 0))))
-    # print("End time:", nanoseconds(int(last_point.get("endTimeNanos", 0))))
-    # print("Data type:", last_point.get("dataTypeName", None))
-    # print("Steps:", last_point["value"][0].get("intVal", None))
-    print(dataset["point"])
